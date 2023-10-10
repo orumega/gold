@@ -1,0 +1,133 @@
+@media screen and (max-width: 1211px) {
+  :root {
+    --black: #000;
+    
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+  .header_container {
+    justify-content: space-between;
+  }
+
+  .header__image-1 {
+    display: none;
+  }
+  .header__image-2 {
+    display: block;
+    min-width: 49px;
+  }
+  .header__button {
+    width: 186px;
+    height: 32px;
+    z-index: 50;
+  }
+
+  .header__button-1 {
+    display: none;
+  }
+
+  .header__button-2 {
+    display: block;
+  }
+
+  .header__logo {
+    z-index: 50;
+  }
+
+  .header__menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+  }
+
+  .header__menu::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 60px;
+    border-bottom: 1px solid #dadada;
+    background: #ffffff;
+    z-index: 50;
+  }
+
+  .menu__list {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 632px;
+    height: 100%;
+    background: #313131;
+    padding: 80px 0px 0px 15px;
+    transform: translate(-100%, 0px);
+    transition: all 0.3s ease 0s;
+  }
+
+  .menu__list.active {
+    transform: translate(0px, 0px);
+  }
+
+  .menu__link {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .menu__item:not(:last-child) {
+    margin: 0px 0px 25px 0px;
+  }
+
+  .burger {
+    z-index: 50;
+    display: block;
+  }
+
+  .burger.active .burger-stripes {
+    display: none;
+  }
+
+  .burger.active .burger-cross {
+    display: block;
+  }
+
+  .menu__sub-list {
+    display: none;
+  }
+
+  .first-section {
+    &__flex-box {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer__inner {
+    display: block;
+  }
+
+  .footer__nav {
+    margin-top: 25px;
+  }
+
+  .third-column {
+    padding-top: 25px;
+  }
+}
